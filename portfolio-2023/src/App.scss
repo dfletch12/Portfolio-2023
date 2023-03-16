@@ -1,6 +1,7 @@
 $primary-color: #61dafb;
 
 @import 'animate.css';
+@import '~loaders.css/loaders.min.css';
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -50,6 +51,26 @@ input, textarea {
 .App-link {
   color: #61dafb;
 }
+
+.loader-hidden {
+  display: none;
+}
+
+.loader-active {
+  color: yellow;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
+
 
 @keyframes App-logo-spin {
   from {
